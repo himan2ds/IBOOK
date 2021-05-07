@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'crispy-forms',
+    'crispy_forms',
     'profiles',
     'posts',
 ]
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'IBooK.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'template'],
+        'DIRS': [ BASE_DIR / 'templates' ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,8 +124,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-    BASE_DIR / 'posts'/'static' ,
-    BASE_DIR / 'profiles'/'static' ,
+    BASE_DIR / 'posts' / 'static' ,
+    BASE_DIR / 'profiles' / 'static' ,
 ]
-MEDIA_URL = '/media' ,
+MEDIA_URL = '/media/' 
 MEDIA_ROOT = BASE_DIR / 'media'
